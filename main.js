@@ -1,11 +1,11 @@
-const shareMenuButtonOpen = document.getElementById('share__menu__button--open');
-const shareMenuButtonClosed = document.getElementById('share__menu__button--closed');
-const shareMenu = document.getElementById('share__menu');
+const socialOpen = document.getElementById('social--open');
+const socialClosed = document.getElementById('social--closed');
+const socialMenu = document.getElementById('social__menu');
 
-shareMenuButtonClosed.addEventListener('click', () => {
-  shareMenu.classList.toggle('visible');
+socialClosed.addEventListener('click', () => {
+  socialMenu.classList.toggle('visible');
 })
 
-shareMenuButtonOpen.addEventListener('click', () => {
-  shareMenu.classList.toggle('visible');
+socialOpen.addEventListener('click', () => {
+  socialMenu.classList.toggle('visible');
 })
