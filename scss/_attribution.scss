@@ -1,21 +1,21 @@
 /* Attribution */
 .attribution { 
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: var(--black); 
-    text-align: center; 
-    background-color: rgb(240, 240, 240);
-    padding: 8px;
-    color: var(--blueish-black);
-}
-
-.attribution a { 
-    color: var(--violet);
-    margin: 0;
-}
-
-.attribution p {
-    font-size: 11px;
-    margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 8px;
+	text-align: center; 
+	background-color: var(--pure-white);
+	color: var(--desaturated-dark-blue);
+	
+	& a { 
+		color: var(--very-dark-greyish-blue);
+		font-weight: 700;
+	}
+	
+	& p {
+		font-size: 11px;
+		margin: 0;
+	}
 }

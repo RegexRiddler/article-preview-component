@@ -1,31 +1,43 @@
+@use './mixins' as *;
+
 @font-face {
-    font-family: 'Manrope';
-    src: url(../font/Manrope-VariableFont_wght.woff2);
+	font-family: 'Manrope';
+	src: url(./font/Manrope-VariableFont_wght.woff2);
 }
 
 body {
-    font-family: 'Manrope', sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 154%;
-    letter-spacing: .122px;
-    color: var(--greyish-blue)
+	font-family: 'Manrope', sans-serif;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 154%;
+	letter-spacing: .122px;
+	color: var(--greyish-blue)
 }
 
 h1 {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 150%;
-    letter-spacing: .2px;
-    color: var(--very-dark-greyish-blue);
-    margin-bottom: 12px;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 150%;
+	letter-spacing: .2px;
+	color: var(--very-dark-greyish-blue);
+	margin-bottom: 12px;
+
+	@include mobile-up {
+		font-size: 20px;
+		letter-spacing: .25px;
+		line-height: 140%;
+	}
 }
 
 h2 {
-    font-weight: 700;
-    color: var(--very-dark-greyish-blue);
+	font-weight: 700;
+	color: var(--very-dark-greyish-blue);
 }
 
 p {
-    margin-bottom: 32px;
+	margin-bottom: 32px;
+
+	@include mobile-up {
+		margin-bottom: 20px;
+	}
 }
